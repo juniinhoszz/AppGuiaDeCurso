@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGuiaDeCurso.MainPage">
+
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Grid BackgroundColor="#231f20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="160" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0"
+                             BackgroundColor="#231f20"
+                             Padding="10"
+                             Margin="10"
+                             HorizontalOptions="FillAndExpand">
+
+
+                    <Image x:Name="img" HeightRequest="160" Aspect="AspectFit"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="1"
+                             Spacing="10"
+                             Margin="10"
+                             Padding="10"
+                             BackgroundColor="#231f20">
+
+                    <Button x:Name="BtnInicial" Text="Inicial" Clicked="BtnInicial_Clicked" BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,20,0,0" CornerRadius="8" />
+
+                    <Button x:Name="BtnPrimeiro" Text="Primeiro Ano" Clicked="BtnPrimeiro_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" Margin="0,5,0,0" />
+
+                    <Button x:Name="BtnSegundo" Text="Segundo Ano" Clicked="BtnSegundo_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" Margin="0,5,0,0" />
+
+                    <Button x:Name="BtnTerceiro" Text="Terceiro Ano" Clicked="BtnTerceiro_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" Margin="0,5,0,0" />
+
+                    <Button x:Name="BtnVestibulinho" Text="Vestibulinho" Clicked="BtnVestibulinho_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" Margin="0,5,0,0" />
+
+                    <Button x:Name="BtnContato" Text="CONTATO" Clicked="BtnTerceiro_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" VerticalOptions="EndAndExpand" />
+
+                </StackLayout>
+                
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
