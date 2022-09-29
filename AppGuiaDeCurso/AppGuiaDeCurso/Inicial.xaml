@@ -2,12 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaDeCurso.Inicial"
-             BackgroundColor="#121212">
+             BackgroundColor="#121212"
+             Title="Aplicativo de Guia De Curso - DS">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+
+            <StackLayout Padding="10">
+
+                <Label Text="Bem Vindo!" FontSize="22" TextColor="White" HorizontalTextAlignment="Center" FontAttributes="Bold" Margin="0,2,0,0"/>
+                <Label Text="Este é o Aplicativo De Guia de Curso de " FontSize="19" TextColor="White" Margin="0,5,0,0" HorizontalTextAlignment="Center"/>
+                <Label Text="Desenvolvimento de Sistemas" FontSize="20" TextColor="#AB0209" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Ele foi desenvolvido com o intuito de guiá-lo pelo Curso Técnico." FontSize="19" TextColor="White" Margin="0,15,0,0" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Este Curso tem três anos de conteúdo, totalizando aproximadamente 1200 horas." FontSize="19" TextColor="White" Margin="0,0,0,0" HorizontalTextAlignment="Center"/>
+
+                
+                <Image x:Name="logo" Aspect="AspectFit" Margin="6,15,6,0"/>
+
+                <Label FontAttributes="Bold" Text="Desenvolvido Por Juninho Chiodi - 2°DS" HorizontalTextAlignment="End" FontSize="10" TextColor="White" Margin="0,0,10,0"/>
+
+                <Button x:Name="BtnContato" Text="CONTATO" Clicked="BtnContato_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" Margin="5" FontSize="18" CornerRadius="8" VerticalOptions="EndAndExpand" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

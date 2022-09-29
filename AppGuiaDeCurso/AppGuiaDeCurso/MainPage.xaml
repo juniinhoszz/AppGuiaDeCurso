@@ -38,7 +38,7 @@
 
                     <Button x:Name="BtnVestibulinho" Text="Vestibulinho" Clicked="BtnVestibulinho_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" Margin="0,5,0,0" />
 
-                    <Button x:Name="BtnContato" Text="CONTATO" Clicked="BtnTerceiro_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" VerticalOptions="EndAndExpand" />
+                    <Button x:Name="BtnContato" Text="CONTATO" Clicked="BtnContato_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" VerticalOptions="EndAndExpand" />
 
                 </StackLayout>
                 
@@ -47,7 +47,7 @@
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
-        <NavigationPage>
+        <NavigationPage BarBackgroundColor="#AB0209" x:Name="nvp" >
         </NavigationPage>
     </MasterDetailPage.Detail>
     
