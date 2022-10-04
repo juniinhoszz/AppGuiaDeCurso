@@ -11,6 +11,8 @@ namespace AppGuiaDeCurso
             InitializeComponent();
 
             MainPage = new MainPage();
+
+            
         }
 
         protected override void OnStart()

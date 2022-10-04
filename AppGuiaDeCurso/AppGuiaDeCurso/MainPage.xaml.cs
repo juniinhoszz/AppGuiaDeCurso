@@ -18,9 +18,7 @@ namespace AppGuiaDeCurso
 
             img.Source = ImageSource.FromResource("AppGuiaDeCurso.img.logo.png");
 
-            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Inicial)));
-
-            this.SetValue(NavigationPage.BarTextColorProperty, Color.FromHex("#AB0209"));
+            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Inicial))) { BarBackgroundColor = Color.FromHex("#AB0209") };
 
 
         }

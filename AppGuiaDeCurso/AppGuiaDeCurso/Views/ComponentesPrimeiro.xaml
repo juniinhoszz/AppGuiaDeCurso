@@ -1,12 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppGuiaDeCurso.Views.ComponentesPrimeiro">
+             x:Class="AppGuiaDeCurso.Views.ComponentesPrimeiro"
+             BackgroundColor="#121212"
+             Title="Disciplinas do Primeiro Ano - DS">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout Spacing="10"
+                     Margin="10"
+                     Padding="10">
+            <Label Text="Componentes - Primeiro Ano" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,15,0,10" HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="BtnProgWeb" Text="Programação Web I" Clicked="BtnProgWeb_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,20,0,0" CornerRadius="8" />
+
+            <Button x:Name="BtnAnalise" Text="Análise e Projeto de Sistemas" Clicked="BtnAnalise_Clicked" BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,5,0,0" CornerRadius="8" />
+
+            <Button x:Name="BtnDesign" Text="Design Digital" Clicked="BtnDesign_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,5,0,0" CornerRadius="8" />
+
+            <Button x:Name="BtnInf" Text="Fundamentos da Informática" Clicked="BtnInf_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,5,0,0" CornerRadius="8" />
+
+            <Button x:Name="BtnTecAlg" Text="Técnicas de Programação e Algoritmos" Clicked="BtnTecAlg_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,5,0,0" CornerRadius="8" />
+
+            <Button x:Name="BtnBanco" Text="BANCO DE DADOS I" Clicked="BtnBanco_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,5,0,0" CornerRadius="8" />
+
+
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -18,7 +18,6 @@ namespace AppGuiaDeCurso
 
             logo.Source = ImageSource.FromResource("AppGuiaDeCurso.img.etec.png");
 
-            this.SetValue(NavigationPage.BarTextColorProperty, Color.FromHex("#AB0209"));
         }
 
         private void BtnContato_Clicked(object sender, EventArgs e)

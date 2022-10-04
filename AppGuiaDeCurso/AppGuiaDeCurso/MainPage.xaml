@@ -47,7 +47,7 @@
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
-        <NavigationPage BarBackgroundColor="#AB0209" x:Name="nvp" >
+        <NavigationPage>
         </NavigationPage>
     </MasterDetailPage.Detail>
     
