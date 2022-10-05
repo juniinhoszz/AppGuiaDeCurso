@@ -16,7 +16,7 @@ namespace AppGuiaDeCurso
         {
             InitializeComponent();
 
-            logo.Source = ImageSource.FromResource("AppGuiaDeCurso.img.etec.png");
+            logo.Source = ImageSource.FromResource("AppGuiaDeCurso.img.etec.jpeg");
 
         }
 

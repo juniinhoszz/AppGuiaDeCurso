@@ -9,7 +9,7 @@
         <StackLayout Spacing="10"
                      Margin="10"
                      Padding="10">
-            <Label Text="Componentes - Primeiro Ano" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,15,0,10" HorizontalTextAlignment="Center"/>
+            <Label Text="Componentes - Primeiro Ano" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,15,0,13" HorizontalTextAlignment="Center"/>
 
             <Button x:Name="BtnProgWeb" Text="Programação Web I" Clicked="BtnProgWeb_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,20,0,0" CornerRadius="8" />
 

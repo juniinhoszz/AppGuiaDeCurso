@@ -1,12 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppGuiaDeCurso.Views.VerComponentes">
+             x:Class="AppGuiaDeCurso.Views.VerComponentes"
+             BackgroundColor="#121212"
+             Title="Detalhes da Disciplina">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+        <StackLayout Spacing="10"
+                     Margin="10"
+                     Padding="10">
+
+            <Label x:Name="txtTitulo" Text="" FontSize="22" TextColor="#AB0209" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Atribuições e Responsabilidades:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,8,0,0" HorizontalTextAlignment="Center"/>
+            <Label x:Name="txtAtrRes" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Valores e Atitudes:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
+            <Label x:Name="txtValAtitu" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Competencias:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
+            <Label x:Name="txtcomp" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Habilidades:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
+            <Label x:Name="txthab" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Bases Tecnológicas:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
+            <Label x:Name="txtbasestec" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Carga Horária:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
+            <Label x:Name="txtCargaHr" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+
+            
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

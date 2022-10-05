@@ -18,9 +18,13 @@
                 <Label Text="Este Curso tem três anos de conteúdo, totalizando aproximadamente 1200 horas." FontSize="19" TextColor="White" Margin="0,0,0,0" HorizontalTextAlignment="Center"/>
 
                 
-                <Image x:Name="logo" Aspect="AspectFit" Margin="6,15,6,0"/>
+                <Image x:Name="logo" Aspect="AspectFit" Margin="4,20,4,0"/>
 
-                <Label FontAttributes="Bold" Text="Desenvolvido Por Juninho Chiodi - 2°DS" HorizontalTextAlignment="End" FontSize="10" TextColor="White" Margin="0,0,10,0"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="ETEC Joaquim Ferreira do Amaral - 2°DS de 2022" HorizontalTextAlignment="Start" FontSize="10" TextColor="White" Margin="0,0,10,0" />
+                    <Label FontAttributes="Bold" Text="Desenvolvido Por Juninho Chiodi" HorizontalTextAlignment="End" FontSize="10" TextColor="White" Margin="0,0,10,0"/>
+                    
+                </StackLayout>
 
                 <Button x:Name="BtnContato" Text="CONTATO" Clicked="BtnContato_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" Margin="5" FontSize="18" CornerRadius="8" VerticalOptions="EndAndExpand" />
             </StackLayout>
