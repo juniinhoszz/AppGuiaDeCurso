@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaDeCurso.Views.ComponentesPrimeiro"
              BackgroundColor="#121212"
-             Title="Disciplinas do Primeiro Ano - DS">
+             Title="Disciplinas do Primeiro Ano">
     <ContentPage.Content>
 
         <StackLayout Spacing="10"

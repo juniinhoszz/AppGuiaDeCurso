@@ -109,7 +109,7 @@ namespace AppGuiaDeCurso
             {
                 try
                 {
-                    Device.OpenUri(new Uri(""));
+                    Device.OpenUri(new Uri("https://drive.google.com/file/d/1wdffezavG3r35ElI0Q1YxW2VggkchtbG/view?usp=sharing"));
                 }
                 catch(Exception ex)
                 {
