@@ -29,7 +29,7 @@ namespace AppGuiaDeCurso.Views
 
             txtbasestec.Text = c.BasesTecnologicas;
 
-            txtCargaHr.Text = c.CargaHoraria.ToString() + " horas.";
+            txtCargaHr.Text = c.CargaHoraria.ToString() + " horas-aula.";
         }
     }
 }

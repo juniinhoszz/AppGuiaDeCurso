@@ -38,7 +38,14 @@
 
                     <Button x:Name="BtnVestibulinho" Text="Vestibulinho" Clicked="BtnVestibulinho_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" Margin="0,5,0,0" />
 
-                    <Button x:Name="BtnContato" Text="CONTATO" Clicked="BtnContato_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" VerticalOptions="EndAndExpand" />
+                    <StackLayout VerticalOptions="EndAndExpand">
+
+                        <Button x:Name="BtnPlano" Text="PLANO DE CURSO COMPLETO" Clicked="BtnPlano_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" Margin="0,5,0,0" />
+
+                        <Button x:Name="BtnContato" Text="CONTATO" Clicked="BtnContato_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" CornerRadius="8" Margin="0,5,0,0"
+                                />
+                    </StackLayout>
+
 
                 </StackLayout>
                 

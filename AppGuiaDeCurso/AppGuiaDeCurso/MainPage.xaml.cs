@@ -30,7 +30,7 @@ namespace AppGuiaDeCurso
                 Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Inicial))) { BarBackgroundColor = Color.FromHex("#AB0209") };
                 IsPresented = false;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 await DisplayAlert("Erro!", ex.Message, "OK");
             }
@@ -41,7 +41,7 @@ namespace AppGuiaDeCurso
             try
             {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ComponentesPrimeiro))) { BarBackgroundColor = Color.FromHex("#AB0209") };
-            ;
+                ;
                 IsPresented = false;
             }
             catch (Exception ex)
@@ -101,5 +101,22 @@ namespace AppGuiaDeCurso
                 await DisplayAlert("Erro!", ex.Message, "OK");
             }
         }
+
+        private async void BtnPlano_Clicked(object sender, EventArgs e)
+        {
+            bool confirm = await DisplayAlert("Tem Certeza?", "Deseja ler o PDF de Plano de Curso completo?", "SIM", "NÃO");
+            if (confirm)
+            {
+                try
+                {
+                    Device.OpenUri(new Uri(""));
+                }
+                catch(Exception ex)
+                {
+                   await DisplayAlert("Erro!", ex.Message, "OK");
+                }
+            }
+        }
     }
 }
+    

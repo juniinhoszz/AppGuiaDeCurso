@@ -36,7 +36,7 @@ namespace AppGuiaDeCurso.Views
 
                     BasesTecnologicas = "Conceitos de desenvolvimento para a Web: Introdução e terminologia • Apresentação do editor / IDE, navegadores e ferramentas do desenvolvedor embutidas nos navegadores • Linguagem de Marcação para a Web(HTML) • Documento HTML mínimo, tags, atributos e conteúdo",
 
-                    CargaHoraria = 200,
+                    CargaHoraria = 80,
                     
                 };
 
@@ -56,17 +56,17 @@ namespace AppGuiaDeCurso.Views
                 {
                     Nome = "Análise e Projeto de Sistemas",
 
-                    AtribuicoesResponsabilidades = "Desenvolver Sites para Web",
+                    AtribuicoesResponsabilidades = "Elaborar projetos de sistema de informação.",
 
-                    ValoresAtitudes = "• Incentivar a criatividade. • Estimular a organização. • Fortalecer a persistencia e o interesse na resolução de situação-problema",
+                    ValoresAtitudes = "Incentivar a criatividade • Estimular a organização • Estimular o interesse na resolução de situações-problema.",
 
-                    Competencias = "",
+                    Competencias = "Modelar projeto de sistemas • Selecionar modelos para o desenvolvimento de sistemas.",
 
-                    Habilidades = "",
+                    Habilidades = "Coletar requisitos de usuários e sistemas • Utilizar métodos de abordagem, coleta de dados e procedimentos de pesquisa  • Aplicar modelo Cascata no desenvolvimento desistemas  • Aplicar modelos Ágeis a projetos de software.",
 
-                    BasesTecnologicas = "",
+                    BasesTecnologicas = "Ciclo de vida de um sistema • Estudo de viabilidade; • Especificação de requisitos; • Concepções do modelo Cascata; • Concepções dos modelos Ágeis • Introdução à análise e projeto orientado a objetos",
 
-                    CargaHoraria = 200,
+                    CargaHoraria = 80,
 
                 };
 
@@ -86,17 +86,17 @@ namespace AppGuiaDeCurso.Views
                 {
                     Nome = "Design Digital",
 
-                    AtribuicoesResponsabilidades = "Desenvolver Sites para Web",
+                    AtribuicoesResponsabilidades = "Desenvolver elementos gráficos para aplicativos e sites.",
 
-                    ValoresAtitudes = "• Incentivar a criatividade. • Estimular a organização. • Fortalecer a persistencia e o interesse na resolução de situação-problema",
+                    ValoresAtitudes = "Incentivar a criatividade • Respeitar as manifestações culturais de outros povos • Estimular o interesse na resolução de situações-problema.",
 
-                    Competencias = "",
+                    Competencias = "Desenvolver interfaces visuais para aplicativos e sites.",
 
-                    Habilidades = "",
+                    Habilidades = "Manipular ou construir elementos visuais para aplicativos e sites.",
 
-                    BasesTecnologicas = "",
+                    BasesTecnologicas = "Softwares para edição e tratamento de imagens estáticas e em movimento • Teoria das cores • Círculo cromático; • Monocromia e cores neutras;",
 
-                    CargaHoraria = 200,
+                    CargaHoraria = 80,
 
                 };
 
@@ -116,18 +116,17 @@ namespace AppGuiaDeCurso.Views
                 {
                     Nome = "Fundamentos da Informática",
 
-                    AtribuicoesResponsabilidades = "Desenvolver Sites para Web",
+                    AtribuicoesResponsabilidades = "Operar sistemas computacionais.",
 
-                    ValoresAtitudes = "• Incentivar a criatividade. • Estimular a organização. • Fortalecer a persistencia e o interesse na resolução de situação-problema",
+                    ValoresAtitudes = "Desenvolver a criticidade • Incentivar comportamentos éticos • Promover ações que considerem o respeito às normas estabelecidas",
 
-                    Competencias = "",
+                    Competencias = "Articular conhecimentos de sistemas computacionais • Distinguir sistemas computacionais.",
 
-                    Habilidades = "",
+                    Habilidades = "Distinguir arquiteturas de sistemas de hardware e software • Executar comandos em interface de linha de comando • Utilizar sistemas computacionais.",
 
-                    BasesTecnologicas = "",
+                    BasesTecnologicas = "Evolução da Informática; • Representação binária de informações; • Unidades de medida de dados; • Hardware; • Software; • Redes de computadores, internet; • Software / hardware livre e proprietário; • Virtualização; • Computação na nuvem.",
 
-                    CargaHoraria = 200,
-
+                    CargaHoraria = 80,
                 };
 
                 await Navigation.PushAsync(new VerComponentes(c));
@@ -146,17 +145,17 @@ namespace AppGuiaDeCurso.Views
                 {
                     Nome = "Técnicas de Programação e Algoritmos",
 
-                    AtribuicoesResponsabilidades = "Desenvolver Sites para Web",
+                    AtribuicoesResponsabilidades = "Realizar versionamento no desenvolvimento de programas. Utilizar algoritmos em linguagem de programação, por meio de ambientes de desenvolvimento de acordo com as necessidades.",
 
-                    ValoresAtitudes = "• Incentivar a criatividade. • Estimular a organização. • Fortalecer a persistencia e o interesse na resolução de situação-problema",
+                    ValoresAtitudes = "Incentivar atitudes de autonomia • Incentivar comportamentos éticos • Estimular o interesse na resolução de situações-problema",
 
-                    Competencias = "",
+                    Competencias = "Implementar algoritmos de programação • Elaborar sistemas, aplicando princípios e paradigmas de programação • Elaborar sistemas, aplicando princípios e paradigmas de programação.",
 
-                    Habilidades = "",
+                    Habilidades = " Elaborar algoritmos • Codificar programas, utilizando técnica de programação estruturada • Depurar e versionar programas, utilizando ambiente de desenvolvimento integrado.",
 
-                    BasesTecnologicas = "",
+                    BasesTecnologicas = "Construção de fluxograma • Princípios de programação • Linguagens de programação e códigos fonte,objeto e executável; • Teste de mesa.",
 
-                    CargaHoraria = 200,
+                    CargaHoraria = 80,
 
                 };
 
@@ -176,17 +175,17 @@ namespace AppGuiaDeCurso.Views
                 {
                     Nome = "Banco de Dados I",
 
-                    AtribuicoesResponsabilidades = "Desenvolver Sites para Web",
+                    AtribuicoesResponsabilidades = "Modelar banco de dados. ",
 
-                    ValoresAtitudes = "• Incentivar a criatividade. • Estimular a organização. • Fortalecer a persistencia e o interesse na resolução de situação-problema",
+                    ValoresAtitudes = "Estimular a organização • estimular o interesse na resolução de situações-problema • Promover ações que considerem o respeito às normas estabelecidas.",
 
-                    Competencias = "",
+                    Competencias = "Desenvolver modelo de banco de dados.",
 
-                    Habilidades = "",
+                    Habilidades = " Levantar as necessidades de informações do sistema • Normalizar tabelas de banco de dados • Associar as tabelas para construção de banco de dados • Aplicar linguagem SQL na construção de tabelas.",
 
-                    BasesTecnologicas = "",
+                    BasesTecnologicas = "Estrutura de banco de dados • Modelo conceitual • Dicionário de dados ",
 
-                    CargaHoraria = 200,
+                    CargaHoraria = 80,
 
                 };
 
