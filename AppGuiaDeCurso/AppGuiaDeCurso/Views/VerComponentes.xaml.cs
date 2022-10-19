@@ -17,19 +17,9 @@ namespace AppGuiaDeCurso.Views
         {
             InitializeComponent();
 
-            txtTitulo.Text = c.Nome;
+            BindingContext = c;
 
-            txtAtrRes.Text = c.AtribuicoesResponsabilidades;
-
-            txtValAtitu.Text = c.ValoresAtitudes;
-
-            txtcomp.Text = c.Competencias;
-
-            txthab.Text = c.Habilidades;
-
-            txtbasestec.Text = c.BasesTecnologicas;
-
-            txtCargaHr.Text = c.CargaHoraria.ToString() + " horas-aula.";
+            txtCargaHr.Text = txtCargaHr.Text + " horas-aula.";
         }
     }
 }

@@ -2,7 +2,15 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaDeCurso.App">
+    
     <Application.Resources>
+
+        <Style TargetType="Frame">
+            <Setter Property="Background" Value="#333" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="HasShadow" Value="True" />
+            <Setter Property="BorderColor" Value="Black" />
+        </Style>
 
     </Application.Resources>
 </Application>

@@ -16,5 +16,23 @@ namespace AppGuiaDeCurso.Views
         {
             InitializeComponent();
         }
+
+        private void Btnsite_Clicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://www.vestibulinhoetec.com.br/home/"));
+            
+        }
+
+        private async void BtnContato_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new Contato());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Erro!", ex.Message, "OK");
+            }
+        }
     }
 }

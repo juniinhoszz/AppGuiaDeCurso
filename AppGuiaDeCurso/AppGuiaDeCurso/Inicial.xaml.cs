@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppGuiaDeCurso.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,16 @@ namespace AppGuiaDeCurso
 
         }
 
-        private void BtnContato_Clicked(object sender, EventArgs e)
+        private async void BtnContato_Clicked(object sender, EventArgs e)
         {
-
+            try
+            {
+                await Navigation.PushAsync(new Contato());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Erro!", ex.Message, "OK");
+            }
         }
     }
 }

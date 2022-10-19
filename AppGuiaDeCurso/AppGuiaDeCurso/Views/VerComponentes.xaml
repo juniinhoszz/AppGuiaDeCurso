@@ -5,33 +5,58 @@
              BackgroundColor="#121212"
              Title="Detalhes da Disciplina">
 
+    <ContentPage.Resources>
+        <Style x:Key="Titulo" TargetType="Label">
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="TextTransform" Value="Uppercase" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="Margin" Value="0,8,0,0" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+        </Style>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout Spacing="10"
+            <StackLayout Spacing="10"
                      Margin="10"
                      Padding="10">
 
-            <Label x:Name="txtTitulo" Text="" FontSize="22" TextColor="#AB0209" FontAttributes="Bold" Margin="0,5,0,0" HorizontalTextAlignment="Center"/>
+                <Label x:Name="txtTitulo" Text="{Binding Nome}" FontSize="22" TextColor="#AB0209" FontAttributes="Bold" Margin="0,5,0,0" HorizontalTextAlignment="Center"/>
 
-            <Label Text="Atribuições e Responsabilidades:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,8,0,0" HorizontalTextAlignment="Center"/>
-            <Label x:Name="txtAtrRes" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+                <Label Text="Atribuições e Responsabilidades:" Style="{ StaticResource Titulo}" />
+                <Frame>
+                    <Label x:Name="txtAtrRes" Text="{Binding AtribuicoesResponsabilidades}" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+                </Frame>
 
-            <Label Text="Valores e Atitudes:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
-            <Label x:Name="txtValAtitu" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
 
-            <Label Text="Competencias:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
-            <Label x:Name="txtcomp" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+                <Label Text="Valores e Atitudes:" Style="{ StaticResource Titulo}" />
+                <Frame>
+                    <Label x:Name="txtValAtitu" Text="{Binding ValoresAtitudes}" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+                </Frame>
 
-            <Label Text="Habilidades:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
-            <Label x:Name="txthab" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
 
-            <Label Text="Bases Tecnológicas:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
-            <Label x:Name="txtbasestec" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+                <Label Text="Competencias:" Style="{ StaticResource Titulo}" />
+                <Frame>
+                    <Label x:Name="txtcomp" Text="{Binding Competencias}" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+                </Frame>
 
-            <Label Text="Carga Horária:" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" HorizontalTextAlignment="Center"/>
-            <Label x:Name="txtCargaHr" Text="" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+                <Label Text="Habilidades:"  Style="{ StaticResource Titulo}"/>
+                <Frame>
+                    <Label x:Name="txthab" Text="{Binding Habilidades}" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+                </Frame>
 
-            
+
+                <Label Text="Bases Tecnológicas:" Style="{ StaticResource Titulo}"/>
+                <Frame>
+                    <Label x:Name="txtbasestec" Text="{Binding BasesTecnologicas}" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+                </Frame>
+
+                <Label Text="Carga Horária:" Style="{ StaticResource Titulo}"/>
+                <Frame>
+                <Label x:Name="txtCargaHr" Text="{Binding CargaHoraria}" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="0,0,0,2" HorizontalTextAlignment="Center"/>
+                </Frame>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

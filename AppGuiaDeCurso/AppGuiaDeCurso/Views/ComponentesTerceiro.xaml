@@ -1,12 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppGuiaDeCurso.Views.ComponentesTerceiro">
+             x:Class="AppGuiaDeCurso.Views.ComponentesTerceiro"
+             BackgroundColor="#121212"
+             Title="Disciplinas do Segundo Ano">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Spacing="10"
+                     Margin="10"
+                     Padding="10">
+
+            <Label Text="Componentes - Segundo Ano" FontSize="22" TextColor="White" FontAttributes="Bold" Margin="0,15,0,13" HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="BtnProgWeb" Text="Programação Web III" Clicked="BtnProgWeb_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,20,0,0" CornerRadius="8" />
+
+            <Button x:Name="BtnMobile" Text="PROGRAMAÇÃO DE APLICATIVOS MOBILE II" Clicked="BtnMobile_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,5,0,0" CornerRadius="8" />
+
+            <Button x:Name="BtnProt" Text="INTERNET, PROTOCOLOS E SEGURANÇA DE SISTEMAS DA INFORMAÇÃO" Clicked="BtnProt_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,5,0,0" CornerRadius="8" />
+
+            <Button x:Name="BtnTCC" Text="PLANEJAMENTO E DESENVOLVIMENTO DO TCC EM DESENVOLVIMENTO DE SISTEMAS" Clicked="BtnTCC_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,5,0,0" CornerRadius="8" />
+
+            <Button x:Name="BtnQualid" Text="QUALIDADE E TESTE DE SOFTWARE" Clicked="BtnQualid_Clicked"  BackgroundColor="#AB0209" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="0,5,0,0" CornerRadius="8" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
