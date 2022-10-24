@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Xamarin.Forms.OpenWhatsApp;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -33,6 +34,18 @@ namespace AppGuiaDeCurso.Views
             catch(Exception ex)
             {
                 await DisplayAlert("Erro!", ex.Message, "OK");
+            }
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Chat.Open("+5514996794615", "Olá, Desejo fazer o curso de DS");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Erro!", "WhatsApp não encontrado, entre em contato pelo numero +55 14 99679-4615", "OK");
             }
         }
     }
